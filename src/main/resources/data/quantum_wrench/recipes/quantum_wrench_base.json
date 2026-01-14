@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "LSL",
+        "GIG",
+        "RSR"
+    ],
+    "key": {
+        "L": {
+            "item": "minecraft:lapis_lazuli"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        },
+        "G": {
+            "item": "minecraft:glowstone_dust"
+        },
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        }
+    },
+    "result": {
+        "item": "quantum_wrench:quantum_wrench",
+        "count": 1
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "quantum_wrench",
+  "version": "${version}",
+  "name": "Quantum Wrench",
+  "description": "A universal wrench that stores and mimics other wrenches",
+  "authors": ["Mervyn"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/quantum_wrench/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.mervyn.quantum_wrench.QuantumWrench"],
+    "client": ["com.mervyn.quantum_wrench.QuantumWrenchClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}

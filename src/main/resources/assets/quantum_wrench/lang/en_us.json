@@ -1,0 +1,12 @@
+{
+    "item.quantum_wrench.quantum_wrench": "Quantum Wrench",
+    "tooltip.quantum_wrench.empty": "No wrenches stored",
+    "tooltip.quantum_wrench.selected": "Selected: ",
+    "tooltip.quantum_wrench.stored": "Stored: %d wrenches",
+    "tooltip.quantum_wrench.more": "  ... and %d more",
+    "screen.quantum_wrench.selection": "Select Wrench",
+    "key.categories.quantum_wrench": "Quantum Wrench",
+    "key.quantum_wrench.open_menu": "Open Wrench Menu",
+    "advancements.quantum_wrench.root.title": "Quantum Mechanics",
+    "advancements.quantum_wrench.root.description": "Combine the power of all wrenches"
+}

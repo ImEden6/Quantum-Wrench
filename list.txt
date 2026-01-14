@@ -1,0 +1,10 @@
+bin
+build
+build.gradle
+gradle
+gradle.properties
+gradlew
+gradlew.bat
+list.txt
+settings.gradle
+src

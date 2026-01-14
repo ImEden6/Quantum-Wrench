@@ -1,0 +1,104 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "quantum_wrench:item/quantum_wrench"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 0
+            },
+            "model": "quantum_wrench:item/quantum_wrench_0"
+        },
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 1
+            },
+            "model": "quantum_wrench:item/quantum_wrench_1"
+        },
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 2
+            },
+            "model": "quantum_wrench:item/quantum_wrench_2"
+        },
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 3
+            },
+            "model": "quantum_wrench:item/quantum_wrench_3"
+        },
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 4
+            },
+            "model": "quantum_wrench:item/quantum_wrench_4"
+        },
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 5
+            },
+            "model": "quantum_wrench:item/quantum_wrench_5"
+        },
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 6
+            },
+            "model": "quantum_wrench:item/quantum_wrench_6"
+        },
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 7
+            },
+            "model": "quantum_wrench:item/quantum_wrench_7"
+        },
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 8
+            },
+            "model": "quantum_wrench:item/quantum_wrench_8"
+        },
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 9
+            },
+            "model": "quantum_wrench:item/quantum_wrench_9"
+        },
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 10
+            },
+            "model": "quantum_wrench:item/quantum_wrench_10"
+        },
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 11
+            },
+            "model": "quantum_wrench:item/quantum_wrench_11"
+        },
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 12
+            },
+            "model": "quantum_wrench:item/quantum_wrench_12"
+        },
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 13
+            },
+            "model": "quantum_wrench:item/quantum_wrench_13"
+        },
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 14
+            },
+            "model": "quantum_wrench:item/quantum_wrench_14"
+        },
+        {
+            "predicate": {
+                "quantum_wrench:stored_count": 15
+            },
+            "model": "quantum_wrench:item/quantum_wrench_15"
+        }
+    ]
+}

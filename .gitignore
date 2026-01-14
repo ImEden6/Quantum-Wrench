@@ -1,0 +1,28 @@
+# Gradle
+.gradle/
+build/
+bin/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Minecraft/Fabric
+run/
+logs/
+*.log
+
+# Java
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# Heap dumps
+*.hprof
+java_pid*.hprof
