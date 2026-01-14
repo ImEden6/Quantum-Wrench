@@ -1,5 +1,6 @@
 package com.mervyn.quantum_wrench;
 
+import com.mervyn.quantum_wrench.config.ModConfig;
 import com.mervyn.quantum_wrench.registry.ModItems;
 import com.mervyn.quantum_wrench.registry.ModRecipes;
 import com.mervyn.quantum_wrench.network.ModNetworking;
@@ -14,6 +15,7 @@ public class QuantumWrench implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.info("Initializing Quantum Wrench");
+        ModConfig.load();
         ModItems.register();
         ModRecipes.register();
         ModNetworking.registerC2SPackets();

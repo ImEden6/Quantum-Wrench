@@ -1,6 +1,7 @@
 package com.mervyn.quantum_wrench.recipe;
 
 import com.mervyn.quantum_wrench.QuantumWrench;
+import com.mervyn.quantum_wrench.config.ModConfig;
 import com.mervyn.quantum_wrench.item.WrenchInventory;
 import com.mervyn.quantum_wrench.registry.ModItems;
 import com.mervyn.quantum_wrench.registry.ModRecipes;
@@ -24,6 +25,13 @@ public class QuantumWrenchAddRecipe extends SpecialCraftingRecipe {
         super(id, category);
     }
 
+    private boolean isValidWrench(ItemStack stack) {
+        if (stack.isIn(WRENCHES_TAG))
+            return true;
+        String itemId = Registries.ITEM.getId(stack.getItem()).toString();
+        return ModConfig.get().isWrench(itemId);
+    }
+
     @Override
     public boolean matches(RecipeInputInventory inventory, World world) {
         ItemStack quantumWrench = ItemStack.EMPTY;
@@ -38,14 +46,14 @@ public class QuantumWrenchAddRecipe extends SpecialCraftingRecipe {
             itemCount++;
             if (stack.getItem() == ModItems.QUANTUM_WRENCH) {
                 if (!quantumWrench.isEmpty())
-                    return false; // Multiple quantum wrenches
+                    return false;
                 quantumWrench = stack;
-            } else if (stack.isIn(WRENCHES_TAG)) {
+            } else if (isValidWrench(stack)) {
                 if (!wrenchToAdd.isEmpty())
-                    return false; // Multiple wrenches to add
+                    return false;
                 wrenchToAdd = stack;
             } else {
-                return false; // Invalid item
+                return false;
             }
         }
 
@@ -53,10 +61,7 @@ public class QuantumWrenchAddRecipe extends SpecialCraftingRecipe {
             return false;
         }
 
-        // Check if wrench is already stored (by Item ID)
         WrenchInventory inv = new WrenchInventory(quantumWrench);
-
-        // Check capacity
         if (inv.isFull()) {
             return false;
         }
@@ -64,7 +69,7 @@ public class QuantumWrenchAddRecipe extends SpecialCraftingRecipe {
         Identifier wrenchId = Registries.ITEM.getId(wrenchToAdd.getItem());
         for (ItemStack stored : inv.getAllWrenches()) {
             if (Registries.ITEM.getId(stored.getItem()).equals(wrenchId)) {
-                return false; // Already stored
+                return false;
             }
         }
 
@@ -83,7 +88,7 @@ public class QuantumWrenchAddRecipe extends SpecialCraftingRecipe {
 
             if (stack.getItem() == ModItems.QUANTUM_WRENCH) {
                 quantumWrench = stack.copy();
-            } else if (stack.isIn(WRENCHES_TAG)) {
+            } else if (isValidWrench(stack)) {
                 wrenchToAdd = stack.copy();
             }
         }
